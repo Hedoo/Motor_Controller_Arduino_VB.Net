@@ -1,0 +1,109 @@
+/*	Responsive Tabs v1.0, Copyright 2014, Joe Mottershaw, https://github.com/joemottershaw/
+//	======================================================================================= */
+
+.tabs {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 434px;
+}
+ul.tabs {
+	float: right;
+	width: 22%;
+	margin-left: 0%;
+}
+.tabs li {
+	margin: 0px 0px 5px 0px;
+	text-align: center;
+}
+.tabs li i {
+	font-size: 30px;
+	margin-bottom: 8px;
+	text-align: center;
+	display: block;
+}
+.tabs li a {
+	color: #454545;
+	display: block;
+	height: 98px;
+	padding: 22px 0px 20px 0px;
+	text-decoration: none;
+	font-size: 14px;
+	background-color: #e6e6e6;
+	position: relative;
+}
+
+.tabs li a:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent; content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(238, 238, 238, 0);
+	border-right-color: #e6e6e6;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.tabs li.active a {
+	
+	background-color: #cccccc;
+}
+.tabs li.active a:after {
+	border-color: rgba(19, 175, 235, 0);
+	border-right-color: #cccccc;
+}
+
+
+.tabs-content {
+	float: left;
+	width: 76%;
+	padding: 0;
+	text-align: left;
+}
+.tabs-content img {
+	width: 100%;
+}
+.tabs-content img.img_left2 {
+	width: auto;
+}
+.tabs-content .tabs-panel {
+	padding: 20px;
+}
+.tabs-content .tabs-panel .tab-title {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+.tabs li i {
+	font-size: 20px;
+}
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+ul.tabs {
+	width: 25%;
+	margin-right: 3%;
+}
+.tabs-content {
+	width: 72%;
+}
+
+}
+
+
+@media only screen and (max-width: 479px){
+ul.tabs {
+	width: 30%;
+	margin-right: 1%;
+}
+.tabs-content {
+	width: 69%;
+}
+
+	
+}
